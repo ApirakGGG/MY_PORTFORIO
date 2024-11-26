@@ -1,0 +1,6 @@
+transform: เปิดใช้งานการเปลี่ยนแปลงเช่นการ scale
+transition-transform: ทำให้การเปลี่ยนแปลงลื่นไหล
+duration-300: ตั้งระยะเวลา 300ms
+hover:scale-105: ขยายขนาดวัตถุ 5% เมื่อ hover
+เพิ่มคลาส hover:shadow-2xl เพื่อเพิ่มเงาเมื่อ hover:
+object-cover เพื่อให้ภาพเต็มพื้นที่และไม่บิดเบี้ยว
