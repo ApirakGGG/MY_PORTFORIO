@@ -34,10 +34,10 @@ const AnimateText: React.FC<AnimateProps> = ({ text, speed = 100 }) => {
   }, [text, speed]);
 
   return (
-    <h2 className={`text-1xl font-extrabold transition-opacity duration-700 `}>
+    <h1 className={`text-1xl font-extralight transition-opacity duration-700 `}>
       {/* แสดงข้อความ */}
       {displayText}
-    </h2>
+    </h1>
   );
 };
 

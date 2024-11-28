@@ -3,6 +3,8 @@
 "use client";
 import React, { useRef } from "react";
 import ScrollDown from "./ScrollDown";
+import MySkills from "./MySkills/MySkills";
+import GridScroll from "./GridScroll";
 
 const Introduce = () => {
   const targetRef = useRef(null); // ใชเลื่นไปที่ tag target
@@ -16,7 +18,17 @@ const Introduce = () => {
             <div className="flex justify-center">
               <ScrollDown targetRef={targetRef} />
             </div>
-            <p> Scroll Down to Know More about AAAJJJWWW</p>
+            <p className="mt-2 text-blue-300">
+              {" "}
+              Scroll Down to Know More about AAAJJJWWW
+            </p>
+          </div>
+        </div>
+        <div>
+          <MySkills /> {/* My Skills */}
+          <div ref={targetRef}>
+            {/* ใช้useRef เพื่อให้ Ref ไปหาเป้าหมาย */}
+            <GridScroll /> {/* Grid Scroll */}
           </div>
         </div>
       </div>

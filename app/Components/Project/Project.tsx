@@ -62,14 +62,14 @@ const Project = () => {
     <>
       {/* Grid introduce skill */}
       <div
-        className="py-32 w-full overflow-x-scroll scrollbar-hide md:flex "
+        className=" py-26 w-full overflow-x-scroll scrollbar-hide md:flex "
         ref={scrollRef}
         onMouseDown={handleMouseDown} // เริ่มการลาก
         onMouseMove={handleMouseMove} // การลากเมาส์
         onMouseUp={handleMouseUp} // ยกเลิกการลาก
         onMouseLeave={handleMouseUp} // จบการลากเมื่อออกจาก container
       >
-        <div className="flex gap-8 px-12 py-5 md:justify-center "> 
+        <div className="flex gap-8 px-12 py-5 md:justify-center ">
           {project.map((prj, index) => (
             <div
               key={index}
@@ -80,11 +80,15 @@ const Project = () => {
               <img
                 src={prj.image}
                 alt=""
-                 className="rounded-lg mb-4 object-cover h-[250px] w-full" //ใส่ object-cover ใน img เพื่อให้ภาพเต็มพื้นที่และไม่บิดเบี้ยว:
+                className="rounded-lg mb-4 object-cover h-[250px] w-full" //ใส่ object-cover ใน img เพื่อให้ภาพเต็มพื้นที่และไม่บิดเบี้ยว:
               />
               <div>
-                <h3 className="text-white font-bold text-lg  hover:text-blue-500">{prj.title}</h3>
-                <p className="text-white text-sm  hover:text-blue-500">{prj.desc}</p>
+                <h3 className="text-white font-bold text-lg  hover:text-blue-500">
+                  {prj.title}
+                </h3>
+                <p className="text-white text-sm  hover:text-blue-500">
+                  {prj.desc}
+                </p>
               </div>
             </div>
           ))}
